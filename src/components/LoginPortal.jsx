@@ -63,7 +63,7 @@ export default function LoginPortal({ onLoginSuccess }) {
   return (
     <div 
       className="min-h-screen bg-cover bg-center flex items-center justify-center p-4 font-sans overflow-hidden"
-      style={{ backgroundImage: 'url("/sky_bg.png")', backgroundColor: '#b3d8f1' }}
+      style={{ backgroundImage: `url("${import.meta.env.BASE_URL}sky_bg.png")`, backgroundColor: '#b3d8f1' }}
       onMouseMove={handleMouseMove}
     >
       
@@ -74,7 +74,7 @@ export default function LoginPortal({ onLoginSuccess }) {
         <div className="hidden md:block w-1/2 p-2.5">
           <div className="relative w-full h-full rounded-[14px] overflow-hidden shadow-inner">
             <img 
-              src="/yeti.png" 
+              src={`${import.meta.env.BASE_URL}yeti.png`} 
               alt="Mascot" 
               className="absolute inset-0 w-full h-full object-cover object-center"
               style={{
