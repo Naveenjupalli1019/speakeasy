@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8faff" />
+      <stop offset="100%" stop-color="#eef2ff" />
+    </linearGradient>
+
+    <!-- Purple Bubble Gradient -->
+    <linearGradient id="purpleBubble" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="15" stdDeviation="20" flood-color="#4f46e5" flood-opacity="0.15" />
+    </filter>
+    <filter id="shadowHeavy" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="-10" dy="20" stdDeviation="25" flood-color="#1e1b4b" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- App Icon Base -->
+  <rect width="1024" height="1024" rx="256" fill="url(#bgGrad)" />
+
+  <!-- Decorative sparkles -->
+  <path d="M700 250 Q 720 250 720 230 Q 720 250 740 250 Q 720 250 720 270 Q 720 250 700 250 Z" fill="#f43f5e" opacity="0.6"/>
+  <path d="M600 300 Q 610 300 610 290 Q 610 300 620 300 Q 610 300 610 310 Q 610 300 600 300 Z" fill="#3b82f6" opacity="0.6"/>
+  <path d="M780 400 Q 790 400 790 390 Q 790 400 800 400 Q 790 400 790 410 Q 790 400 780 400 Z" fill="#f59e0b" opacity="0.6"/>
+
+  <!-- Left Purple Bubble (Source Language) -->
+  <path d="M220 400 C 220 300, 300 220, 400 220 L 520 220 C 620 220, 700 300, 700 400 L 700 520 C 700 620, 620 700, 520 700 L 400 700 L 300 780 L 300 700 C 250 680, 220 620, 220 520 Z" fill="url(#purpleBubble)" filter="url(#shadow)" />
+  
+  <!-- The letter "A" -->
+  <text x="460" y="550" font-family="sans-serif" font-size="280" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
+  
+  <!-- Right White Bubble (Target Language) -->
+  <path d="M420 540 C 420 450, 490 380, 580 380 L 700 380 C 790 380, 860 450, 860 540 L 860 660 C 860 750, 790 820, 700 820 L 600 820 L 520 890 L 520 820 C 470 800, 420 750, 420 660 Z" fill="#ffffff" filter="url(#shadowHeavy)" />
+  
+  <!-- The Chinese Character "文" -->
+  <text x="640" y="700" font-family="sans-serif" font-size="240" font-weight="bold" fill="#4f46e5" text-anchor="middle">文</text>
+
+  <!-- Dotted path arrow -->
+  <path d="M 280 620 Q 350 780 500 700" fill="none" stroke="#a5b4fc" stroke-width="16" stroke-dasharray="24 24" stroke-linecap="round"/>
+  <path d="M 460 680 L 515 690 L 490 730" fill="none" stroke="#a5b4fc" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  
+</svg>
